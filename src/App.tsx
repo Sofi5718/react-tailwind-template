@@ -1,7 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./Componets/NavBar";
+
 export default function App() {
     return (
         <div>
-            <h1>App</h1>
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="about" element={<About />} />
+            </Routes>
         </div>
     );
 }
